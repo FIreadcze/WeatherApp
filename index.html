@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>weather app - JavaScript OpenAPI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- obal-->
+    <div class="container">
+      <div class="app-title">
+        <div class="input">
+          <input
+            type="text"
+            class="inputValue"
+            placeholder="Enter a city"
+            list="cities"
+          />
+
+          <datalist id="cities">
+            <option value="Prague"> </option>
+            <option value="New York"> </option>
+            <option value="Boston"> </option>
+            <option value="Brno"> </option>
+            <option value="Paris"> </option>
+          </datalist>
+
+          <input type="submit" value="Submit" class="button" />
+        </div>
+      </div>
+      <div class="notification"></div>
+      <div class="weather-container">
+        <div class="display">
+          <h1 class="name">---</h1>
+          <div class="icon">
+            <img src="icons/unknown.png" alt="" />
+          </div>
+          <p class="desc">Description:</p>
+
+          <p class="temp">Temperature</p>
+        </div>
+      </div>
+    </div>
+
+    <table border="1px">
+      <th>today</th>
+      <th>tomorrow</th>
+      <th>day after tomorrow</th>
+
+      <tr>
+        <td class="today">---</td>
+        <td class="tomorrow">---</td>
+        <td class="afterTomorrow">---</td>
+      </tr>
+    </table>
+    <script src="app.js"></script>
+  </body>
+</html>
